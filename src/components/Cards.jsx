@@ -21,7 +21,7 @@ const Cards = ({item}) => {
         if(user && user?.email){
             const cartItem = {menuItemId: _id,name,quantity:1,image,price,email:user.email};
             //console.log(cartItem)
-            fetch('http://localhost:8000/carts',{
+            fetch('https://bakers-and-crumbss-server.onrender.com//carts',{
                 method:"POST",
                 headers:{
                     'content-type':'application/json'
