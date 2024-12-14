@@ -25,7 +25,7 @@ const Modal = () => {
           name: data.name,
           email: data.email,
         };
-        axios.post('http://localhost:8000/users', userInfor)
+        axios.post('https://bakers-and-crumbss-server.onrender.com//carts', userInfor)
           .then((response) => {
             alert("Account Created Successfully");
             navigate(from, { replace: true });
